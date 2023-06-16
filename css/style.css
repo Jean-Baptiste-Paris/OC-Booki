@@ -1,4 +1,6 @@
 /****** General ***********/
+@import url('https://fonts.googleapis.com/css?family=Raleway=swap');            /* import de la famille de font Raleway */
+
 * {
     font-family: 'Raleway', sans-serif;
 }
