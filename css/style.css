@@ -119,6 +119,10 @@ main {
     border-radius: 0 15px 15px 0;
 }
 
+#icone-recherche {
+    display: none;
+}
+
 /*** FILTRES ***/
 
 .filtres{
