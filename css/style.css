@@ -26,6 +26,8 @@ body {
     width: 100%;
     max-width: 1440px;
     box-sizing: border-box;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 a {
@@ -46,36 +48,30 @@ header {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    margin-bottom: 30px;
-    align-self: stretch;
+    margin-bottom: 60px;
 }
 
-header ul {
+.head-menu {
     display: flex;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+    justify-content: space-between;
+    width: 244px;
 }
 
-header ul li {
-    margin: 0 30px;
+.head-menu a {
     padding-top: 15px;
 }
 
-header ul li:hover {
+.head-menu a:hover {
     border-top: 3px solid var(--main-color);
+    padding-top: 12px;
 }
 
 .logo {
-    max-height: 20px;
-    margin: 30px 50px;
+    height: 20px;
+    margin-top: 30px;
 }
 
 /*** MAIN ***/
-
-main {
-    padding: 0 50px;
-}
 
 .section-recherche > * {
     margin-bottom: 35px;
