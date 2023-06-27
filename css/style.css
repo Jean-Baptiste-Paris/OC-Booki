@@ -9,6 +9,7 @@
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
+    --recherche-border-radius : 15px;
 }
 
 .fa-solid {
@@ -87,15 +88,23 @@ main {
 .barre-de-recherche {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: stretch;
+    height: 50px;
 }
 
 .barre-de-recherche i {
     font-size: 18px;
+    padding: 16px 18px;
+}
+
+.fa-location-dot {
     color: black;
     background-color: var(--main-bg-color);
-    padding: 16px 18px;
-    border-radius: 15px 0 0 15px;
+    border-radius: var(--recherche-border-radius) 0 0 var(--recherche-border-radius);
+}
+
+.fa-search {
+    color: white;
 }
 
 .barre-de-recherche input {
@@ -105,7 +114,7 @@ main {
 }
 
 .barre-de-recherche input[type="text"] {
-    padding: 14px 24px 14px 24px;               /* QUESTIION écart à droite du texte toujours trop important, comment le gérer ? */
+    padding-left: 24px;
     border-style: solid;
     border-right: 0;
     border-width: 1px;
@@ -116,15 +125,22 @@ main {
     outline: none;
 }
 
-.barre-de-recherche input[type="submit"]{
+.barre-de-recherche button {
     color: white;
+    font-weight: 700;
+    font-size: 17px;
     background-color: var(--main-color);
-    padding: 15px 16px;
-    border-style: none;
-    border-radius: 0 15px 15px 0;
+    align-self: stretch;
+    border-width: 0;
+    border-radius: 0 var(--recherche-border-radius) var(--recherche-border-radius) 0;
 }
 
-#icone-recherche {
+#bouton-rechercher {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+#icone-rechercher {
     display: none;
 }
 
@@ -375,11 +391,11 @@ main {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
-    #bouton-recherche {
+    #bouton-rechercher {
         display: none;
     }
 
-    #icone-recherche {
+    #icone-rechercher {
         display: unset;
     }
 }
