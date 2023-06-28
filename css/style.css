@@ -228,7 +228,6 @@ header {
 }
 
 .card-rating {
-    font-size: 18px;
     margin-top: -3px;
     margin-bottom: -3px;
 }
@@ -344,6 +343,47 @@ header {
     margin-bottom: 5px;
 }
 
+/****** Activités ***********/
+
+.activites {
+    padding: 30px;
+    margin-top: 35px;
+}
+
+.activites .card {
+    padding: 0;
+}
+
+.activites h2 {
+    margin-bottom: 30px;
+}
+
+.activites .card-content {
+    padding: 20px;
+}
+
+.activites h3 {
+    margin: 0;
+}
+
+.grid-activites {
+    display: grid;
+    grid-template-columns: repeat(4, calc(25% - 22.5px));
+    gap: 30px;
+}
+
+.activites img {
+    border-radius: 20px 20px 0 0;
+    height: 380px;
+    width: 100%;
+}
+
+.img-placeholder {
+    background: blue;
+    border-radius: 15px 15px 0 0;
+    height: 380px;
+    width: 100%;
+}
 
 
 
