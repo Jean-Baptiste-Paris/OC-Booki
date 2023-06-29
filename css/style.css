@@ -30,12 +30,25 @@ body {
     margin-right: 50px;
 }
 
+li {
+    list-style: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
 a {
     text-decoration: none;
 }
 
 a:visited{
     color: var(--main-color);
+}
+
+h4 {
+    margin: 0;
 }
 
 p {
@@ -73,13 +86,19 @@ header {
 
 /*** MAIN ***/
 
-.section-recherche > * {
-    margin-bottom: 35px;
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
 }
 
 /*** BARRE DE RECHERCHE ***/
 
-
+.section-recherche {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
 
 .barre-de-recherche {
     display: flex;
@@ -169,6 +188,7 @@ header {
     border-width: 2px;
     border-color: var(--main-bg-color);
     border-radius: 25px;
+    transition-duration: 0.5s;
 }
 
 .filtres-bouton:hover,
@@ -347,7 +367,6 @@ header {
 
 .activites {
     padding: 30px;
-    margin-top: 35px;
 }
 
 .activites .card {
@@ -378,13 +397,28 @@ header {
     width: 100%;
 }
 
-.img-placeholder {
-    background: blue;
-    border-radius: 15px 15px 0 0;
-    height: 380px;
-    width: 100%;
+/****** Footer ***********/
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: var(--main-bg-color);
 }
 
+.colonne-footer {
+    padding: 20px;
+}
+
+.colonne-footer,
+.footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer a {
+    color: black;
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -421,6 +455,12 @@ header {
 
     .populaires-cards .card-subtitle {
         font-size: 13px;
+    }
+
+    .grid-activites {
+        display: grid;
+        grid-template-columns: repeat(2, calc(50% - 15px));
+        gap: 30px;
     }
 }
 
