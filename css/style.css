@@ -221,8 +221,8 @@ main {
 
 .infobulle {
     display: flex;
-    align-items: stretch;
-    gap: 10px
+    align-items: center;
+    gap: 10px;
 }
 
 .infobulle i {
@@ -232,7 +232,7 @@ main {
     border-style: solid;
     border-color: var(--main-bg-color);
     border-radius: var(--border-radius-nm);
-    padding: 0 6px;
+    padding: 10px 8px;
 }
 
 .infobulle p {
