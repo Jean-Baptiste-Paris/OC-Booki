@@ -184,27 +184,21 @@ main {
 
 .filtres{
     display: flex;
-    align-items: center;
+    align-items: stretch;
     flex-wrap: wrap;
-}
-
-.filtres p {
-    margin: 0;
-    font-size: 17px;
     font-weight: 700;
+    gap: 15px;
 }
 
 .filtres i {
-    margin-right: 10px;
-    font-size: 20px;
+    padding-right: 10px;
 }
 
 .filtres-bouton {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-left: 15px;
-    padding: 14px 19px;
+    padding: 0 20px;
     border-style: solid;
     border-width: 2px;
     border-color: var(--main-bg-color);
@@ -221,17 +215,18 @@ main {
 
 .infobulle {
     display: flex;
-    align-items: center;
+    align-items: stretch;
+    gap: 10px
 }
 
 .infobulle i {
+    display: flex;
+    align-items: center;
     border-width: 1px;
     border-style: solid;
     border-color: var(--main-bg-color);
-    border-radius: 15px;
-    margin-right: 10px;
-    padding: 5px 8px;
-    font-size: x-small;
+    border-radius: var(--recherche-border-radius);
+    padding: 0 6px;
 }
 
 .infobulle p {
@@ -395,10 +390,6 @@ main {
 
 .activites .card-content {
     padding: 20px;
-}
-
-.activites h3 {
-    margin: 0;
 }
 
 .grid-activites {
