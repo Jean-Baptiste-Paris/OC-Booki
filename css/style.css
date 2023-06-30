@@ -32,7 +32,6 @@ li {
 }
 
 ul {
-    margin: 0;
     padding: 0;
 }
 
@@ -44,7 +43,7 @@ a:visited{
     color: var(--main-color);
 }
 
-h4, h3, p {
+h4, h3, p, ul {
     margin: 0;
 }
 
@@ -181,6 +180,12 @@ main {
     display: none;
 }
 
+.filtres-bouton:hover,
+.barre-de-recherche button:hover,
+.card:hover {
+    cursor: pointer;
+}
+
 /*** FILTRES ***/
 
 .filtres{
@@ -235,10 +240,6 @@ main {
     padding: 10px 8px;
 }
 
-.infobulle p {
-    margin: 0;
-}
-
 /*** CARTES ***/
 
 .card {
@@ -247,6 +248,11 @@ main {
     border-radius: var(--border-radius-lg);
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.03);
 }
 
 .card img {
