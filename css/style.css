@@ -128,7 +128,7 @@ main {
 .recherche-icon {
     display: flex;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 17px;
     background-color: var(--main-bg-color);
     border-radius: var(--border-radius-nm) 0 0 var(--border-radius-nm);
 }
@@ -178,6 +178,8 @@ main {
 
 #icone-rechercher {
     display: none;
+    border-radius: var(--border-radius-nm);
+    margin-left: calc(var(--border-radius-nm) * -1);
 }
 
 .filtres-bouton:hover,
@@ -188,12 +190,11 @@ main {
 
 /*** FILTRES ***/
 
-.filtres{
+.filtres,
+.flex-filtres-boutons{
     display: flex;
-    align-items: stretch;
     flex-wrap: wrap;
-    font-weight: 700;
-    gap: 15px;
+    gap: 20px;
 }
 
 .filtres .card-title {
@@ -215,6 +216,7 @@ main {
     border-radius: 25px;
     transition-duration: 0.5s;
     height: 50px;
+    font-weight: 700;
 }
 
 .filtres-bouton:hover,
@@ -433,7 +435,7 @@ footer ul {
     .populaires {
         width: 100%;
     }
-    
+
     .hebergements-and-populaires {
         flex-direction: column;
         gap: 50px;
@@ -455,12 +457,66 @@ footer ul {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    
+    .main-container {
+        padding: unset;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 30px;
+        padding-top: 30px;
+        align-items: center;
+    }
+
+    .head-menu {
+        gap: unset;
+        width: 100%;
+        height: 35px;
+        align-items: stretch;
+    }
+
+    .head-menu a {
+        width: 50%;
+        align-items: unset;
+        justify-content: center;
+    }
+
+    .head-menu a:hover {
+        padding: unset;
+        border-top: unset;
+        border-bottom: var(--nav-border-width) solid var(--main-color);
+    }
+
+    main {
+        padding: 30px 0 0;
+    }
+
+    .section-recherche {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .barre-de-recherche input[type="text"] {
+        width: 100%;
+    }
+
     #bouton-rechercher {
         display: none;
     }
 
     #icone-rechercher {
         display: unset;
+    }
+
+    .flex-filtres-boutons {
+        justify-content: space-between;
+    }
+
+    .filtres-bouton {
+        display: flex;
+        padding: unset;
+        padding-left: 20px;
+        width: 40%;
     }
 }
