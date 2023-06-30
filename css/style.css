@@ -189,6 +189,11 @@ main {
     flex-wrap: wrap;
     font-weight: 700;
     gap: 15px;
+    min-height: 50px;
+}
+
+.filtres .card-title {
+    align-self: center;
 }
 
 .filtres i {
