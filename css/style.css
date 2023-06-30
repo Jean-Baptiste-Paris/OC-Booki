@@ -405,7 +405,7 @@ main {
 
 /****** Footer ***********/
 
-.footer {
+footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     background-color: var(--main-bg-color);
@@ -416,13 +416,13 @@ main {
 }
 
 .colonne-footer,
-.footer ul {
+footer ul {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.footer a {
+.colonne-footer a {
     color: black;
 }
 
