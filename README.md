@@ -1,7 +1,9 @@
 # OC-Booki
 
 Projet scolaire pour OpenClassrooms
+
 Projet n°2 du parcours Développeur Web
+
 Sujet : Création de la page d'accueil d'une agence de voyage avec HTML & CSS
 
 Compétences travaillées :
