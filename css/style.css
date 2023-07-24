@@ -545,7 +545,7 @@ footer ul {
         gap: 15px;
     }
 
-    .populaires-cards .card {
+    .populaires-cards a {
         width: initial;
     }
 
